@@ -231,34 +231,34 @@ export const PrototypeC = (): JSX.Element => {
                   {message.media && message.text ? (
                     <>
                       {/* Media Card */}
-                      <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#f9f9fb] rounded-lg border border-solid border-[#e2e3e9] shadow-none">
+                      <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#F6F6F6] rounded-lg shadow-none border-0">
                         <MediaGrid media={message.media} className="w-full" />
                       </Card>
                       {/* Text Card stacked below */}
-                      <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#f9f9fb] rounded-lg border border-solid border-[#e2e3e9] shadow-none">
-                        <div className="relative flex-1 mt-[-1.00px] font-body-body-02 font-[number:var(--body-body-02-font-weight)] text-[#5e6278] text-[length:var(--body-body-02-font-size)] tracking-[var(--body-body-02-letter-spacing)] leading-[var(--body-body-02-line-height)] [font-style:var(--body-body-02-font-style)]">
+                      <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#F6F6F6] rounded-lg shadow-none border-0">
+                        <div className="relative flex-1 mt-[-1.00px] font-body-body-02 font-[number:var(--body-body-02-font-weight)] text-[#7F818F] text-[length:var(--body-body-02-font-size)] tracking-[var(--body-body-02-letter-spacing)] leading-[20px] [font-style:var(--body-body-02-font-style)]">
                           {message.text}
                         </div>
                       </Card>
                     </>
                   ) : message.hasLink ? (
-                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#f9f9fb] rounded-lg border border-solid border-[#e2e3e9] shadow-none">
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Sofia_Pro-Regular',Helvetica] font-normal text-transparent text-sm tracking-[0] leading-[14px]">
-                        <span className="text-[#5e6278] leading-[22px]">
+                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#F6F6F6] rounded-lg shadow-none border-0">
+                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Sofia_Pro-Regular',Helvetica] font-normal text-transparent text-sm tracking-[0] leading-[20px]">
+                        <span className="text-[#7F818F] leading-[20px]">
                           Shop this link from Zara{" "}
                         </span>
-                        <span className="text-[#0b62c5] leading-[var(--body-body-02-line-height)] font-body-body-02 [font-style:var(--body-body-02-font-style)] font-[number:var(--body-body-02-font-weight)] tracking-[var(--body-body-02-letter-spacing)] text-[length:var(--body-body-02-font-size)]">
+                        <span className="text-[#0b62c5] leading-[20px] font-body-body-02 [font-style:var(--body-body-02-font-style)] font-[number:var(--body-body-02-font-weight)] tracking-[var(--body-body-02-letter-spacing)] text-[length:var(--body-body-02-font-size)]">
                           http://rstyle.me/+CnhzlmtS5lhipvCxGecF_w
                         </span>
                       </div>
                     </Card>
                   ) : message.media ? (
-                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#f9f9fb] rounded-lg border border-solid border-[#e2e3e9] shadow-none">
+                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#F6F6F6] rounded-lg shadow-none border-0">
                       <MediaGrid media={message.media} className="w-full" />
                     </Card>
                   ) : (
-                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#f9f9fb] rounded-lg border border-solid border-[#e2e3e9] shadow-none">
-                      <div className="relative flex-1 mt-[-1.00px] font-body-body-02 font-[number:var(--body-body-02-font-weight)] text-[#5e6278] text-[length:var(--body-body-02-font-size)] tracking-[var(--body-body-02-letter-spacing)] leading-[var(--body-body-02-line-height)] [font-style:var(--body-body-02-font-style)]">
+                    <Card className="inline-flex max-w-[280px] items-center justify-center gap-2.5 p-2 bg-[#F6F6F6] rounded-lg shadow-none border-0">
+                      <div className="relative flex-1 mt-[-1.00px] font-body-body-02 font-[number:var(--body-body-02-font-weight)] text-[#7F818F] text-[length:var(--body-body-02-font-size)] tracking-[var(--body-body-02-letter-spacing)] leading-[20px] [font-style:var(--body-body-02-font-style)]">
                         {message.text}
                       </div>
                     </Card>
@@ -311,7 +311,7 @@ export const PrototypeC = (): JSX.Element => {
       </div>
 
       {/* Message Input */}
-      <div className="flex-none flex w-full items-end justify-between gap-2 p-4 bg-white border-t border-[#e2e3e9]" style={{height: selectedMedia || newMessage.length > 0 ? 'auto' : '72px'}}>
+      <div className="flex-none flex w-full items-end justify-between gap-2 p-4 bg-white border-t border-[#e2e3e9]" style={{height: selectedMedia || newMessage.length > 0 ? 'auto' : 'auto'}}>
         <div className="flex w-full items-end gap-2">
           <input
             type="file"
@@ -331,10 +331,10 @@ export const PrototypeC = (): JSX.Element => {
             </div>
           </Button>
           {/* Animated Placeholder Input Area */}
-          <div className={`flex-1 bg-[#f9f9fb] border border-solid border-[#e2e3e9] ${selectedMedia || newMessage.length > 0 ? 'rounded-[16px]' : 'rounded-[40px]'} transition-all duration-200`}>
-            <div className="flex flex-col gap-2 p-2 h-auto min-h-[30px] justify-end">
+          <div className={`flex-1 bg-[#f9f9fb] border border-solid border-[#e2e3e9] ${selectedMedia ? 'rounded-[16px]' : 'rounded-[40px]'} transition-all duration-300 ease-in-out`}>
+            <div className="flex flex-col gap-2 p-2 h-auto min-h-[30px] justify-end transition-all duration-300 ease-in-out">
               {selectedMedia && (
-                <div className="relative flex-shrink-0 w-12 h-auto rounded-lg overflow-hidden">
+                <div className="relative flex-shrink-0 w-12 h-auto rounded-lg overflow-hidden transition-all duration-300 ease-in-out">
                   {selectedMedia.type === 'image' ? (
                     <img src={selectedMedia.url} alt="Preview" className="w-full h-auto object-contain" />
                   ) : (
@@ -355,7 +355,7 @@ export const PrototypeC = (): JSX.Element => {
               <div className="relative w-full">
                 <Input
                   placeholder=" "
-                  className="flex-1 bg-transparent outline-none border-none text-sm md:text-xs min-h-[30px] h-auto p-0 m-0 focus:ring-0 focus:outline-none placeholder:text-muted-foreground break-words"
+                  className="flex-1 bg-transparent outline-none border-none text-[0.95em] font-normal min-h-[30px] h-auto px-3 py-0 m-0 focus:ring-0 focus:outline-none placeholder:text-muted-foreground break-words"
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   onKeyPress={handleKeyPress}

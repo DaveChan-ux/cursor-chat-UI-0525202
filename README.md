@@ -1,3 +1,9 @@
+
+
+
+https://github.com/user-attachments/assets/8a672cfd-8d9c-4c01-94dc-fc6294afc3c8
+
+
 # Chat UI Project
 
 Chat UI - input field, single image and media attach

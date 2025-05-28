@@ -311,8 +311,8 @@ export const PrototypeC = (): JSX.Element => {
       </div>
 
       {/* Message Input */}
-      <div className="flex-none flex w-full items-end justify-between gap-2 p-4 bg-white border-t border-[#e2e3e9]" style={{height: selectedMedia || newMessage.length > 0 ? 'auto' : 'auto'}}>
-        <div className="flex w-full items-end gap-2">
+      <div className="flex-none flex w-full items-center justify-center gap-2 p-4 bg-white border-t border-[#e2e3e9]" style={{height: selectedMedia || newMessage.length > 0 ? 'auto' : 'auto'}}>
+        <div className="flex w-full max-w-[800px] items-center gap-2">
           <input
             type="file"
             ref={fileInputRef}
